@@ -59,7 +59,7 @@ Successfully ran the Docker container locally:
 docker run --rm -p 9000:8080 my-hairstyle-lambda lambda_function.lambda_handler
 
 
-AWS Deployment (Optional)
+## AWS Deployment (Optional)
 
 Plan to push the Docker image to ECR.
 
@@ -67,7 +67,7 @@ Create a Lambda function using the ECR image.
 
 Test the function and optionally expose it via API Gateway.
 
-Technologies Used
+## Technologies Used
 
 Python 3.13
 
@@ -79,14 +79,14 @@ Docker
 
 AWS Lambda (planned deployment)
 
-How to Run Locally
+## How to Run Locally
 
 Build Docker Image
 
 docker build -t my-hairstyle-lambda .
 
 
-Run Docker Container
+## Run Docker Container
 
 docker run --rm -p 9000:8080 my-hairstyle-lambda lambda_function.lambda_handler
 
@@ -108,7 +108,7 @@ The model will return a score indicating the likelihood of straight vs curly hai
   "probability": 0.523
 }
 
-Next Steps
+## Next Steps
 
 Complete AWS deployment and test the Lambda function.
 
