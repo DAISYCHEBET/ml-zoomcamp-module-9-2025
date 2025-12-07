@@ -64,7 +64,7 @@ Plan to push the Docker image to ECR.
 
 Create a Lambda function using the ECR image.
 
-Test the function and optionally expose it via API Gateway.
+## Test the function and optionally expose it via API Gateway.
 
 ## Technologies Used
 
