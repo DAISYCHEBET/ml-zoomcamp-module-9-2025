@@ -64,7 +64,7 @@ Plan to push the Docker image to ECR.
 
 Create a Lambda function using the ECR image.
 
-## Test the function and optionally expose it via API Gateway.
+Test the function and optionally expose it via API Gateway.
 
 ## Technologies Used
 
@@ -90,7 +90,7 @@ docker build -t my-hairstyle-lambda .
 docker run --rm -p 9000:8080 my-hairstyle-lambda lambda_function.lambda_handler
 
 
-Test the Lambda Function Locally
+## Test the Lambda Function Locally
 
 Send a test request using curl (replace <image_url> with your image):
 
