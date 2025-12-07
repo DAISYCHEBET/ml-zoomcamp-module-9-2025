@@ -6,8 +6,7 @@ This repository contains work for the ML Zoomcamp Module 9 homework, where we de
 
 Downloaded Model Files
 
-hair_classifier_v1.onnx and hair_classifier_v1.onnx.data from Alexey Grigorev’s dataset: https://github.com/alexeygrigorev/large-datasets/releases/download/hairstyle
-.
+hair_classifier_v1.onnx and hair_classifier_v1.onnx.data from Alexey Grigorev’s dataset: https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/master/cohorts/2025/09-serverless/homework.md
 
 ## Prepared Image for Inference
 
