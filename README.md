@@ -44,7 +44,7 @@ Applied preprocessing to an example image:
 
 Obtained model output for the example image.
 
-Dockerization
+## Dockerization
 
 Extended the AWS Lambda Python 3.13 Docker image.
 
