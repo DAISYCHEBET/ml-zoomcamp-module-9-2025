@@ -6,27 +6,28 @@ This repository contains work for the ML Zoomcamp Module 9 homework, where we de
 
 Downloaded Model Files
 
-hair_classifier_v1.onnx and hair_classifier_v1.onnx.data from Alexey Grigorev’s dataset
+hair_classifier_v1.onnx and hair_classifier_v1.onnx.data from Alexey Grigorev’s dataset: https://github.com/alexeygrigorev/large-datasets/releases/download/hairstyle
 .
 
-Prepared Image for Inference
+## Prepared Image for Inference
 
 Wrote Python code to download, resize, and preprocess images:
 
-from PIL import Image
-from io import BytesIO
-from urllib import request
+<pre> ```python# Open and resize image to the model's required size
+from PIL import Image, ImageOps
+from IPython.display import display
 
-def download_image(url):
-    with request.urlopen(url) as resp:
-        buffer = resp.read()
-    img = Image.open(BytesIO(buffer))
-    return img
+img_path = "data/test_image.jpeg"
+img = Image.open(img_path)
+print("Original mode/size:", img.mode, img.size)
 
-def prepare_image(img, target_size=(200, 200)):
-    if img.mode != 'RGB':
-        img = img.convert('RGB')
-    return img.resize(target_size, Image.NEAREST)
+TARGET_SIZE = (200, 200)   # model input from Module 8
+img_rgb = img.convert("RGB")
+img_resized = img_rgb.resize(TARGET_SIZE, Image.NEAREST)
+
+print("Resized to:", TARGET_SIZE)
+display(img_resized)``` </pre>
+
 
 
 Target image size used: 200x200.
