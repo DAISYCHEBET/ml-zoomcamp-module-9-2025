@@ -1,0 +1,5 @@
+Q1_ONNX_outputs: ['output']
+Q2_target_size: (200, 200)
+Q3_first_pixel_R: -1.0732940435409546
+Q4_raw_logit: 0.09156641364097595
+Q4_sigmoid: 0.5228756224304479
